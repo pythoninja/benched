@@ -1,0 +1,24 @@
+languageCode = "en"
+languageName = "English"
+displayName = "EN"
+isoCode = "en"
+weight = 1
+rtl = false
+
+title = "benched.cc"
+description = "Public benchmarks collection"
+copyright = ""
+
+dateFormat = "2 January 2006"
+
+[params]
+  mainSections = ["bench"]
+
+[author]
+  name = "bencher"
+  # image = "img/author.jpg"
+  headline = ""
+  bio = ""
+  links = [
+    { github = "https://github.com/username" },
+  ]
