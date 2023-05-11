@@ -6,6 +6,7 @@ tags:
     - yabs
     - v6node
     - v6-de-01
+description: "V6node (v6-de-01) benchmark result"
 
 draft: false
 ---
