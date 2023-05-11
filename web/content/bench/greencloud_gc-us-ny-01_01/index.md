@@ -1,0 +1,105 @@
+---
+title: "Greencloud (gc-us-ny-01) Benchmark #01"
+date: 2023-05-11T12:09:11+03:00
+lastmod: 2023-05-11T12:09:11+03:00
+tags:
+    - yabs
+    - greencloud
+    - gc-us-ny-01
+description: "Greencloud (gc-us-ny-01) benchmark result"
+
+draft: false
+---
+
+## Yabs Output
+
+```text
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+#              Yet-Another-Bench-Script              #
+#                     v2023-04-23                    #
+# https://github.com/masonr/yet-another-bench-script #
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+
+Thu May 11 04:20:47 EDT 2023
+
+Basic System Information:
+---------------------------------
+Uptime     : 0 days, 2 hours, 14 minutes
+Processor  : Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz
+CPU cores  : 1 @ 2199.986 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ✔ Enabled
+RAM        : 1.8 GiB
+Swap       : 1024.0 MiB
+Disk       : 18.7 GiB
+Distro     : AlmaLinux 8.3 (Purple Manul)
+Kernel     : 4.18.0-240.15.1.el8_3.x86_64
+VM Type    : KVM
+IPv4/IPv6  : ✔ Online / ✔ Online
+
+IPv6 Network Information:
+---------------------------------
+ISP        : Nexeon Technologies, Inc.
+ASN        : AS20278 Nexeon Technologies, Inc.
+Host       : Nexeon Technologies, Inc.
+Location   : Buffalo, New York (NY)
+Country    : United States
+
+fio Disk Speed Tests (Mixed R/W 50/50):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 79.25 MB/s   (19.8k) | 686.68 MB/s  (10.7k)
+Write      | 79.46 MB/s   (19.8k) | 690.30 MB/s  (10.7k)
+Total      | 158.72 MB/s  (39.6k) | 1.37 GB/s    (21.5k)
+           |                      |                     
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 1.33 GB/s     (2.6k) | 1.49 GB/s     (1.4k)
+Write      | 1.40 GB/s     (2.7k) | 1.59 GB/s     (1.5k)
+Total      | 2.74 GB/s     (5.3k) | 3.09 GB/s     (3.0k)
+
+iperf3 Network Speed Tests (IPv4):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed      | Ping           
+-----           | -----                     | ----            | ----            | ----           
+Clouvider       | London, UK (10G)          | 982 Mbits/sec   | 604 Mbits/sec   | 77.8 ms        
+Scaleway        | Paris, FR (10G)           | 2.07 Gbits/sec  | 1.21 Gbits/sec  | 91.3 ms        
+NovoServe       | North Holland, NL (40G)   | 1.78 Gbits/sec  | 1.68 Gbits/sec  | 88.3 ms        
+Uztelecom       | Tashkent, UZ (10G)        | 975 Mbits/sec   | 207 Mbits/sec   | 198 ms         
+Clouvider       | NYC, NY, US (10G)         | busy            | 936 Mbits/sec   | 20.7 ms        
+Clouvider       | Dallas, TX, US (10G)      | 3.28 Gbits/sec  | 675 Mbits/sec   | 39.5 ms        
+Clouvider       | Los Angeles, CA, US (10G) | 2.21 Gbits/sec  | 1.02 Gbits/sec  | 59.3 ms        
+
+iperf3 Network Speed Tests (IPv6):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed      | Ping           
+-----           | -----                     | ----            | ----            | ----           
+Clouvider       | London, UK (10G)          | 1.93 Gbits/sec  | 426 Mbits/sec   | 77.8 ms        
+Scaleway        | Paris, FR (10G)           | 1.90 Gbits/sec  | 1.47 Gbits/sec  | 91.6 ms        
+NovoServe       | North Holland, NL (40G)   | 1.46 Gbits/sec  | 1.64 Gbits/sec  | 93.4 ms        
+Uztelecom       | Tashkent, UZ (10G)        | 768 Mbits/sec   | 723 Mbits/sec   | 180 ms         
+Clouvider       | NYC, NY, US (10G)         | 3.13 Gbits/sec  | 1.19 Gbits/sec  | 9.11 ms        
+Clouvider       | Dallas, TX, US (10G)      | 3.04 Gbits/sec  | 1.34 Gbits/sec  | 30.2 ms        
+Clouvider       | Los Angeles, CA, US (10G) | 2.34 Gbits/sec  | 1.21 Gbits/sec  | 56.0 ms        
+
+Geekbench 5 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 641                           
+Multi Core      | 650                           
+Full Test       | https://browser.geekbench.com/v5/cpu/21184804
+
+Geekbench 6 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 787                           
+Multi Core      | 785                           
+Full Test       | https://browser.geekbench.com/v6/cpu/1220216
+
+YABS completed in 21 min 59 sec
+```
+
+Download metrics as text: [yabs.txt](./yabs.txt)
