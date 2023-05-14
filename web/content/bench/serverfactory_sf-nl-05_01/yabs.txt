@@ -1,0 +1,86 @@
+[root@sf-nl-05 ~]# curl -sL yabs.sh | bash -s -- -56
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+#              Yet-Another-Bench-Script              #
+#                     v2023-04-23                    #
+# https://github.com/masonr/yet-another-bench-script #
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+
+Sun May 14 08:09:59 CEST 2023
+
+Basic System Information:
+---------------------------------
+Uptime     : 0 days, 0 hours, 17 minutes
+Processor  : AMD Ryzen 9 5950X 16-Core Processor
+CPU cores  : 2 @ 3393.622 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ✔ Enabled
+RAM        : 3.6 GiB
+Swap       : 0.0 KiB
+Disk       : 100.0 GiB
+Distro     : AlmaLinux 8.7 (Stone Smilodon)
+Kernel     : 4.18.0-425.13.1.el8_7.x86_64
+VM Type    : KVM
+IPv4/IPv6  : ✔ Online / ✔ Online
+
+IPv6 Network Information:
+---------------------------------
+ISP        : Serverius Holding B.V.
+ASN        : AS211895 Serverius Holding B.V.
+Location   : Dronten, Flevoland (FL)
+Country    : Netherlands
+
+fio Disk Speed Tests (Mixed R/W 50/50):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 303.09 MB/s  (75.7k) | 2.10 GB/s    (32.8k)
+Write      | 303.89 MB/s  (75.9k) | 2.11 GB/s    (33.0k)
+Total      | 606.99 MB/s (151.7k) | 4.21 GB/s    (65.8k)
+           |                      |                     
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 2.41 GB/s     (4.7k) | 2.50 GB/s     (2.4k)
+Write      | 2.54 GB/s     (4.9k) | 2.67 GB/s     (2.6k)
+Total      | 4.95 GB/s     (9.6k) | 5.17 GB/s     (5.0k)
+
+iperf3 Network Speed Tests (IPv4):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed      | Ping           
+-----           | -----                     | ----            | ----            | ----           
+Clouvider       | London, UK (10G)          | 1.04 Gbits/sec  | 1000 Mbits/sec  | 6.84 ms        
+Scaleway        | Paris, FR (10G)           | 1.02 Gbits/sec  | 999 Mbits/sec   | 11.9 ms        
+NovoServe       | North Holland, NL (40G)   | 1.04 Gbits/sec  | 1.00 Gbits/sec  | 8.03 ms        
+Uztelecom       | Tashkent, UZ (10G)        | busy            | busy            | 98.0 ms        
+Clouvider       | NYC, NY, US (10G)         | 144 Mbits/sec   | 576 Mbits/sec   | 76.5 ms        
+Clouvider       | Dallas, TX, US (10G)      | 345 Mbits/sec   | 778 Mbits/sec   | 123 ms         
+Clouvider       | Los Angeles, CA, US (10G) | 276 Mbits/sec   | busy            | 144 ms         
+
+iperf3 Network Speed Tests (IPv6):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed      | Ping           
+-----           | -----                     | ----            | ----            | ----           
+Clouvider       | London, UK (10G)          | 1.04 Gbits/sec  | 986 Mbits/sec   | 6.77 ms        
+Scaleway        | Paris, FR (10G)           | 1.02 Gbits/sec  | 863 Mbits/sec   | 13.1 ms        
+NovoServe       | North Holland, NL (40G)   | 1.03 Gbits/sec  | 987 Mbits/sec   | 7.100 ms       
+Uztelecom       | Tashkent, UZ (10G)        | busy            | busy            | 97.10 ms       
+Clouvider       | NYC, NY, US (10G)         | 268 Mbits/sec   | 939 Mbits/sec   | 76.5 ms        
+Clouvider       | Dallas, TX, US (10G)      | 245 Mbits/sec   | 748 Mbits/sec   | 124 ms         
+Clouvider       | Los Angeles, CA, US (10G) | 212 Mbits/sec   | 671 Mbits/sec   | 144 ms         
+
+Geekbench 5 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 1596                          
+Multi Core      | 2888                          
+Full Test       | https://browser.geekbench.com/v5/cpu/21197239
+
+Geekbench 6 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 1980                          
+Multi Core      | 3610                          
+Full Test       | https://browser.geekbench.com/v6/cpu/1251626
+
+YABS completed in 15 min 2 sec
